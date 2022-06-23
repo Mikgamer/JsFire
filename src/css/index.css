@@ -1,0 +1,113 @@
+:root{
+    --grey: #222222;
+    --red: #b00000;
+    --white: rgb(235, 235, 235);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    background: var(--grey);
+    font-family: "Khula";
+    height: 100vh;
+}
+
+h1,h2{
+    font-family: "Raleway";;
+}
+
+h3,h4,h5{
+    font-family: "Prata";
+}
+
+header{
+    z-index: 10;
+    position: absolute;
+    padding: 30px 20px 10px;
+}
+
+header h1{
+    margin: 30px 0 0;
+    font-size: 60px;
+    filter: drop-shadow(4px 8px 2px rgb(0 0 0/.4));
+}
+
+header h3{
+    margin: 0;
+    font-size: 20px;
+    filter: drop-shadow(4px 8px 2px rgb(0 0 0/.4));
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.fire{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: rgb(0 0 0/.2);
+    border-radius: 15px;
+}
+
+.ember{
+    border-radius: 50% 0 50% 50%;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgb(200 0 0/.2);
+    user-select: none;
+}
+
+#wind{
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    width: 200px;
+    height: 20px;
+    vertical-align: sub;
+}
+
+#wind::-webkit-slider-runnable-track{
+    appearance: none;
+    background: var(--red);
+    cursor: pointer;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#wind::-webkit-slider-thumb{
+    appearance: none;
+    background: var(--grey) ;
+    height: 15px;
+    width: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px var(--white);
+    margin-top:-2px;
+}
+
+footer{
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover{
+    color: var(--red);
+}
